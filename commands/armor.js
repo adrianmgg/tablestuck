@@ -7,6 +7,12 @@ const tierBD = [[1,2],[1,4],[1,6],[1,8],[1,10],[1,12],[2,16],[2,20],[2,24],[3,30
 const tierAv = [1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
 const tList = ["MELEE","RANGED","MAGIC","NA"];
 
+exports.summary = `view and manage your equipped armor`;
+exports.description = prefix=>`The armor command is used to view and manage your equipped armor. Doing the command with no arguments will display information about your currently equipped armor. The argument EJECT will eject the currently equipped armor into the room
+The argument EQUIP can be used to equip an armorkind item from your sylladex.
+${prefix}armor
+${prefix}armor eject
+${prefix}armor equip [item position in sylladex]`;
 exports.run = (client, message, args) => {
 
   if(funcall.regTest(client, message, message.author) == false){

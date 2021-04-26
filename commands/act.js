@@ -4,6 +4,9 @@ const tierDmg = [1,5,7,10,14,19,25,32,40,49,59,70,82,95,109,124,140];
 const log =true;
 //Used to take actions during STRIFE
 
+exports.summary = `select an action to take during strife`;
+exports.description = prefix=>`During strife, this command is used to select an action to take and the target of said action. Doing ACT without any arguments will list all of your available actions and STAMINA. Doing ACT and selecting an action but no target will list all characters currently engaged in STRIFE. This list can also be seen by using the >list command.
+${prefix}act [action] [target]`;
 exports.run = (client, message, args) => {
 
 //Check if player is registered

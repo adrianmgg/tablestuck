@@ -1,3 +1,24 @@
+exports.summary = `view and manage the alchemy athenaeum`;
+exports.description = prefix=>`The Athenaeum command (or ${prefix}ath for convenience) is used to view and manage the ALCHEMY ATHENAEUM, a list of all items that are available to alchemize. Doing ${prefix}ath with no arguments will display the first page of the athenaeum.
+
+The argument **PAGE** can be used to select what page you wish to view.
+${prefix}ath followed by a number selection will give detailed information about that item in the athenaeum
+The argument **PUSH** can be used to push a selected item in the athenaeum to the front of the list for organization.
+The argument **DELETE** can be used to delete a selected item from the athenaeum if it starts to feel cluttered.
+The argument **TIER** can be used to change the tier of a selected item in the athenaeum.
+
+View Atheneum
+  ${prefix}ath
+Inspect item in Athenaeum
+  ${prefix}ath [selected item position]
+View page in Athenaeum
+  ${prefix}ath page [Desired page]
+Push item to front of Athenaeum
+  ${prefix}ath push [Selected item]
+Delete item from Athenaeum
+  ${prefix}ath delete [Selected item]
+Change tier of item in Athenaeum 
+  ${prefix}ath tier [selected item] [tier (1-16)]`;
 exports.run = (client, message, args) => {
 
     if(client.strifecall.strifeTest(client, message, message.author) == true){
@@ -107,7 +128,7 @@ exports.run = (client, message, args) => {
      let value = parseInt(args[1], 10) - 1;
 
      if(isNaN(value)||value<0||value>=registry.length){
-       message.channe.send("That is not a valid selection!");
+       message.channel.send("That is not a valid selection!");
        return;
      }
 
@@ -137,7 +158,7 @@ exports.run = (client, message, args) => {
      let value = parseInt(args[1], 10) - 1;
 
      if(isNaN(value)||value<0||value>=registry.length){
-       message.channel.send("That is not a valid selection!");
+       message.channe.send("That is not a valid selection!");
        return;
      }
 

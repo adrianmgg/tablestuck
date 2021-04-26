@@ -4,6 +4,9 @@ const strifecall = require("../modules/strifecall.js");
 
 //command to alchemize an item from a totem in the alchemiter
 
+exports.summary = `alchemize objects chosen from your alchemy athenaeum`;
+exports.description = prefix=>`The ALCHEMIZE command can be used to alchemize objects chosen from your ALCHEMY ATHENAEUM. Doing this command with no arguments will list available objects in your Athenaeum. If an item is selected, it will consume the appropriate number of grist and deploy the alchemized object in the room with you.
+${prefix}alchemize [item position in athenaeum] [quantity (optional)]`;
 exports.run = (client, message, args) => {
 
   if(funcall.regTest(client, message, message.author) == false){
