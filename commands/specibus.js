@@ -2,6 +2,14 @@ const funcall = require("../modules/funcall.js");
 const strifecall = require("../modules/strifecall.js");
 //simple ping command to check if the bot is online.
 
+exports.summary = `inspect/manage your strife specibus`;
+exports.description = prefix=>`Lets you see your strife specibus. after ALLOCATING a weaponkind, items you EQUIP will show up here.
+
+See all EQUIPPED items
+\`${prefix}specibus\`
+
+Inspect a single EQUIPPED item
+\`${prefix}specibus [item number]\``; // TODO need to explain eject subcommand
 exports.run = (client, message, args) => {
 
   if(funcall.regTest(client, message, message.author) == false){

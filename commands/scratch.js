@@ -1,6 +1,8 @@
 
 
 
+// TODO needs summary
+// TODO needs description
 exports.run = (client, message, args) => {
 
   if(!client.funcall.dmcheck(client,message)){

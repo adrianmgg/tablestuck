@@ -2,6 +2,11 @@ const funcall = require("../modules/funcall.js");
 //simple ping command to check if the bot is online.
 const strifecall = require("../modules/strifecall.js");
 
+exports.summary = `engage in strife`;
+exports.description = prefix=>`Allows you to engage in strife. If there are underlings in the room, you will roll initative to see who goes first, and can begin to ACT. If there is no one there, you can wait until others show up, or abscond.
+\`${prefix}strife\`
+
+(Can also be used to leave strife, but this is purely a debug function, try not to do this unless you need to, and if you need to, tell us!)`;
 exports.run = (client, message, args) => {
 
     var charid = client.playerMap.get(message.guild.id.concat(message.author.id),"control");

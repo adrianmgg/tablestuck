@@ -2,6 +2,14 @@ const funcall = require("../modules/funcall.js");
 //simple ping command to check if the bot is online.
 const strifecall = require("../modules/strifecall.js");
 
+exports.summary = `build your client player's house towards their next gate`;
+exports.description = prefix=>`The BUILD command is used to spend a number of your CLIENT PLAYER'S build grist on building their house towards their next gate. An item with the computer trait that has sburb installed must be in the same room as you or in your inventory for this.
+
+Spend some of your client player's grist on building
+\`${prefix}build [build grist to spend]\`
+
+Check how much grist has been spent so far, which gates have been reached, and how much you need to spend to get to the next gate.
+\`${prefix}build\``;
 exports.run = (client, message, args) => {
 
 

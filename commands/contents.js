@@ -1,3 +1,8 @@
+exports.summary = `display the contents of an item in the room`;
+exports.description = prefix=>`Can be used to display the contents of an item with the STORAGE trait.
+\`${prefix}contents [index of item in room]\`
+
+These items can be captchalogued by adding the contents position of the item after the target item, see \`${prefix}help captcha\``;
 exports.run = (client, message, args) => {
   if (client.strifecall.strifeTest(client, message, message.author) == true) {
     message.channel.send("You can't do that in Strife! You need to either win the Strife or leave Strife using Abscond!");

@@ -1,3 +1,6 @@
+exports.summary = `change the profile picture that is displayed when pestering chums`;
+exports.description = prefix=>`Used to change the PROFILE PICTURE that is displayed when PESTERING chums.
+\`${prefix}chumpic [Image URL]\``;
 exports.run = (client, message, args) => {
 
   if(client.funcall.regTest(client, message, message.author) == false){

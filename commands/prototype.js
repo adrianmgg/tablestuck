@@ -1,3 +1,6 @@
+// TODO needs summary
+exports.description = prefix=>`Must be in the same room as your SPRITE, who will appear wherever your CRUXTRUDER is deployed. It is recommended to rename your item something fun, or at least consider what you might be giving to the world when you prototype. **Only effects underlings when done before USING your entry artifact.**
+\`${prefix}prototype [item number index]\``;
 exports.run = (client, message, args) => {
 
   var charid = message.guild.id.concat(message.author.id);

@@ -1,5 +1,13 @@
 const phernalia = ["cruxtruder","totem lathe","alchemiter","pre-punched card","punch designix","instant alchemiter"]
 
+exports.summary = `displays the paraphernalia registry of your client`;
+exports.description = prefix=>`Requires a computer. Displays the PARAPHERNALIA REGISTRY of your CLIENT. This include machines that can be DEPLOYED and items the client has alchemized, and show up in their ATHENAEUM.
+
+View registry
+\`${prefix}registry\`
+
+Change viewed registry page
+\`${prefix}registry page [page number]\``;
 exports.run = async function(client, message, args) {
 
   var charid = message.guild.id.concat(message.author.id);

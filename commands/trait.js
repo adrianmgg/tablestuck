@@ -1,3 +1,11 @@
+exports.summary = `check what a certain trait does or what trait effects you currently have`;
+exports.description = prefix=>`A quick reference to what trait effects you currently have, or what a certain trait does.
+
+Check your current set bonuses
+\`${prefix}trait\`
+
+Check a certain trait's bonuses and set bonuses.
+\`${prefix}trait [trait name]\``;
 exports.run = (client, message, args) => {
 
   if(!args[0]){

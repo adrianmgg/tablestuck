@@ -7,6 +7,17 @@ const tierBD = [[1,2],[1,4],[1,6],[1,8],[1,10],[1,12],[2,16],[2,20],[2,24],[3,30
 const tierAv = [1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
 const tList = ["MELEE","RANGED","MAGIC","NA"];
 
+exports.summary = `inspect or manage your trinket`;
+exports.description = prefix=>`Lets you inspect, equip, or eject a trinket from your person. You can only have one equipped at a time, so choose wisely!
+
+View Current Trinket
+\`${prefix}trinket\`
+
+Equip a Trinket from your Sylladex
+\`${prefix}trinket equip [item #]\`
+
+Eject your currently equipped Trinket
+\`${prefix}trinket eject\``;
 exports.run = (client, message, args) => {
 
   if(funcall.regTest(client, message, message.author) == false){

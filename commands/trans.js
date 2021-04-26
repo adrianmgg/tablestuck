@@ -1,3 +1,11 @@
+exports.summary = `use a transportalizer`;
+exports.description = prefix=>`Lets you use a transportalizer when you find yourself in the same room as one.
+
+Use Transportalizer
+\`${prefix}trans [position of transportalizer in room]\`
+
+Connect a Transportalizer to a second Transportalizer
+\`${prefix}trans  [position of transportalizer in room] set [target transportalizer code]\``;
 exports.run = (client, message, args) => {
 
 

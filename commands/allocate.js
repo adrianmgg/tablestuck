@@ -5,7 +5,7 @@ const strifecall = require("../modules/strifecall.js");
 
 exports.summary = `allocate an unallocated strife specibus`;
 exports.description = prefix=>`The allocate command is used to allocate an unallocated STRIFE SPECIBUS to the weaponkind of the selected item. This must be used before equipping items to the specibus.
-${prefix}allocate [item position in sylladex]`;
+\`${prefix}allocate [item position in sylladex]\``;
 exports.run = (client, message, args) => {
 
   if(funcall.regTest(client, message, message.author) == false){

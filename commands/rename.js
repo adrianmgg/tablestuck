@@ -2,6 +2,9 @@ const funcall = require("../modules/funcall.js");
 const strifecall = require("../modules/strifecall.js");
 //simple ping command to check if the bot is online.
 
+exports.summary = `rename an item`;
+exports.description = prefix=>`Changes the name of an item in your sylladex, for easier tracking of the things you make. Certain game-critical items can't be renamed, and names can't be too long. If the item is in your athenaeum, it will automatically change the name there as well.
+\`${prefix}rename [item number] [new name]\``;
 exports.run = (client, message, args) => {
 
   if(funcall.regTest(client, message, message.author) == false){

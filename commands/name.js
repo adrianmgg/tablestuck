@@ -1,3 +1,6 @@
+exports.summary = `change the name of your character`;
+exports.description = prefix=>`Changes the name of your character. Has some character limits.
+\`${prefix}name [new name]\``;
 exports.run = (client, message, args) => {
 
   if(!args[0]){

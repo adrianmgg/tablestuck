@@ -5,8 +5,14 @@ const log =true;
 //Used to take actions during STRIFE
 
 exports.summary = `select an action to take during strife`;
-exports.description = prefix=>`During strife, this command is used to select an action to take and the target of said action. Doing ACT without any arguments will list all of your available actions and STAMINA. Doing ACT and selecting an action but no target will list all characters currently engaged in STRIFE. This list can also be seen by using the >list command.
-${prefix}act [action] [target]`;
+exports.description = prefix=>`During strife, this command is used to select an action to take and the target of said action. 
+\`${prefix}act [action] [target]\`
+
+Doing ACT without any arguments will list all of your available actions and STAMINA.
+\`${prefix}act\`
+
+Doing ACT and selecting an action but no target will list all characters currently engaged in STRIFE. This list can also be seen by using the ${prefix}list command.
+\`${prefix}act [action]\``;
 exports.run = (client, message, args) => {
 
 //Check if player is registered

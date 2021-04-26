@@ -1,3 +1,6 @@
+exports.summary = `say something to everyone in the same room as you`;
+exports.description = prefix=>`Sends a message to everyone else in the same room as you.
+\`${prefix}say [message]\``;
 exports.run = async function(client, message, args){
 
   var charid = client.playerMap.get(message.guild.id.concat(message.author.id),"control");

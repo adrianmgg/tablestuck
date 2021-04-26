@@ -2,6 +2,9 @@ const funcall = require("../modules/funcall.js");
 //simple ping command to check if the bot is online.
 const strifecall = require("../modules/strifecall.js");
 
+exports.summary = `pass your turn in combat`;
+exports.description = prefix=>`Passes your turn in combat. Keep that ball rolling!
+\`${prefix}pass\``;
 exports.run = (client, message, args) => {
 
   if(funcall.regTest(client, message, message.author) == false){

@@ -6,6 +6,18 @@
 const gateReq = [0,100,200,400,800,1600,3200,6400];
 const gateName = ["FIRST","SECOND","THIRD","FOURTH","FIFTH","SIXTH","SEVENTH"];
 
+exports.summary = `enter gates, return nodes, dungeons, etc.`;
+exports.description = prefix=>`Used to enter gates above a player's house, enter return nodes, enter dungeon entrances, enter gates on land, and use the chain on the dream moons.
+
+In house:
+    List Gates
+    \`${prefix}enter\`
+    
+    Enter a Gate from the list
+    \`${prefix}enter [gate]\`
+
+Anywhere else:
+    \`${prefix}enter\``;
 exports.run = (client, message, args) => {
 
   if(client.strifecall.strifeTest(client, message, message.author) == true){

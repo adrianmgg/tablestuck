@@ -2,6 +2,12 @@ const funcall = require("../modules/funcall.js");
 //simple ping command to check if the bot is online.
 const strifecall = require("../modules/strifecall.js");
 
+exports.summary = `connect to a client player`;
+exports.description = prefix=>`Used to connect to a CLIENT PLAYER.
+\`${prefix}connect [Desired client's CLIENT CODE]\`
+
+The command with no arguments will display your CLIENT CODE, which you can send to your desired SERVER PLAYER.
+\`${prefix}connect\``;
 exports.run = (client, message, args) => {
 
   if(funcall.regTest(client, message, message.author) == false){

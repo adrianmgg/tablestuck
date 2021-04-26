@@ -4,6 +4,16 @@ const strifecall = require("../modules/strifecall.js");
 
 //command to alchemize an item from a totem in the alchemiter
 
+exports.summary = `use the instant alchemiter`;
+exports.description = prefix=>`Once your server has deployed your INSTANT ALCHEMITER, you gain access to quick alchemy! All the fun of alchemy without all the running around, carving dowels and punching cards.
+
+Add a single item in your SYLLADEX to your ATHENAEUM
+\`${prefix}quickalch [item number]\`
+
+Alchemize together two items in your SYLLADEX and record it in your ATHENAEUM
+\`${prefix}quickalch [item number one] [alchemy method (|| or &&)] [item number two]\`
+
+note: \`||\`, \`or\`, and \`oror\` are all valid for doing oror alchemy, similarly with \`&&\`, \`and\`, and \`andand\` with andand alchemy.`;
 exports.run = (client, message, args) => {
 
   if(funcall.regTest(client, message, message.author) == false){

@@ -1,5 +1,8 @@
 const tierBD = [[1,2],[1,4],[1,6],[1,8],[1,10],[1,12],[2,16],[2,20],[2,24],[3,30],[3,36],[4,40],[5,50],[6,60],[7,70],[8,80],[10,100]];
 
+exports.summary = `use consumable items from your inventory`;
+exports.description = prefix=>`Can be used to CONUME any item in your inventory that has the FOOD, MEAT or CANDY trait. Only FOOD items can be consumed outside of STRIFE.
+\`${prefix}consume [sylladex position]\``;
 exports.run = (client,message,args) =>{
 
   var charid = client.playerMap.get(message.guild.id.concat(message.author.id),"control");

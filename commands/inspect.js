@@ -5,6 +5,15 @@ const strifecall = require("../modules/strifecall.js");
 
 const typeList = ["EMPTY","DUNGEON","CONSTRUCT","RETURN NODE","VILLAGE","HOUSE","GATE"];
 
+exports.summary = `inspect items in the current room`;
+exports.description = prefix=>`Without an argument, this will list items in the room with you. 
+\`${prefix}inspect\`
+
+The **PAGE** argument can be used to view different pages of the room if there are more than 10.
+\`${prefix}inspect page [page number]\`
+
+You can select an item in the room to see detailed information on it.
+\`${prefix}inspect [item index in room]\``;
 exports.run = (client, message, args) => {
 
 

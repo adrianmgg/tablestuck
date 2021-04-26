@@ -4,6 +4,20 @@ const strifecall = require("../modules/strifecall.js");
 
 const tierCost = [0,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768,65536,131072]
 
+exports.summary = `deploy an item into your client player's house`;
+exports.description = prefix=>`Used to deploy an item into your CLIENT PLAYER'S house.
+
+The command with no arguments will display the PHERNALIA REGISTRY of your client player.
+\`${prefix}deploy\`
+
+The argument **PAGE** can be used to display different pages of the CLIENT'S PHERNALIA REGISTRY
+\`${prefix}deploy page [page number]\`
+
+If an item in the PHERNALIA REGISTRY is selected but not a room, a list of rooms in the CLIENT PLAYER'S house will be displayed.
+\`${prefix}deploy [item index in registry]\`
+
+The command with an item and a room selected will deploy that item to that room.
+\`${prefix}deploy [item index in registry] [room in house to deploy in]\``;
 exports.run = (client, message, args) => {
 
   if(funcall.regTest(client, message, message.author) == false){

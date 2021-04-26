@@ -1,6 +1,12 @@
 
 const typeList = ["EMPTY","DUNGEON","CONSTRUCT","RETURN NODE","VILLAGE","HOUSE","GATE"];
 
+exports.summary = `view a list of characters in the room with you`;
+exports.description = prefix=>`View a list of all characters in the room with you. 
+\`${prefix}list\`
+
+You can also add a page number if there are more than 10 characters.
+\`${prefix}list [page number (optional)]\``;
 exports.run = (client,message,args) =>{
 
   var charid = client.playerMap.get(message.guild.id.concat(message.author.id),"control");

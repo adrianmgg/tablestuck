@@ -1,4 +1,15 @@
 
+exports.summary = `move between areas`;
+exports.description = prefix=>`Move between areas either in a house or on a land.
+
+Doing the command with no arguments will display all the rooms in the area.
+\`${prefix}move\`
+
+Selecting a number position will move you to that room.
+\`${prefix}move [room number]\`
+
+Selecting a direction (n/north, s/south, e/east, w/west) will move you in that direction (cannot be done in house)
+\`${prefix}move [direction]\``;
 exports.run = (client, message, args) => {
 
   if(client.strifecall.strifeTest(client, message, message.author) == true){

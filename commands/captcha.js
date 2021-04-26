@@ -2,6 +2,13 @@ const funcall = require("../modules/funcall.js");
 const landcall = require("../modules/landcall.js");
 const strifecall = require("../modules/strifecall.js");
 
+exports.summary = `captchalogue an item from the room you are in and put it in your sylladex`;
+exports.description = prefix=>`Used to CAPTCHALOGUE an item from the room you are in and put it in your SYLLADEX. If your SYLLADEX is full, this will eject an item to make room.
+
+\`${prefix}captcha [index of item in room]\`
+
+If an item contains other items inside of it (For example, the MAILBOX has the SBURB discs), you can add an additional argument, being the position of the item within the container (can be viewed with ${prefix}CONTENTS)
+\`${prefix}captcha [index of item in room] [index of stored item within selected item]\``;
 exports.run = (client, message, args) => {
 
   if(funcall.regTest(client, message, message.author) == false){

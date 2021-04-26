@@ -2,6 +2,17 @@ const funcall = require("../modules/funcall.js");
 
 
 
+exports.summary = `view and add players to your chumroll`;
+exports.description = prefix=>`Used to view and add players to your CHUMROLL.
+
+Doing the command with no arguments will send you a list of your CHUMS and their CHUMTAGS.
+\`${prefix}chumroll\`
+
+The argument **PAGE** can be used to select what page of your chumroll you are viewing if you have more than 10 chums
+\`${prefix}chumroll page [page number]\`
+
+The argument **ADD** followed by either a valid CHUMHANDLE or CHUMTAG will add that chum to your chumroll.
+\`${prefix}chumroll add [chumhandle or chumtag]\``;
 exports.run = async function(client, message, args) {
 
   if(client.funcall.regTest(client, message, message.author) == false){

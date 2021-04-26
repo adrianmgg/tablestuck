@@ -1,3 +1,11 @@
+exports.summary = `inspect an npc or player in the room with you`;
+exports.description = prefix=>`Used to INSPECT the information of an NPC or PLAYER in the room with you.
+
+With no arguments this will by default display your own information.
+\`${prefix}check\`
+
+To select a target, use the index of characters listed using the ${prefix}LIST command.
+\`${prefix}check [position of character in ${prefix}list]\``;
 exports.run = (client, message, args) => {
 
   var charid = client.playerMap.get(message.guild.id.concat(message.author.id),"control");

@@ -2,6 +2,9 @@ const funcall = require("../modules/funcall.js");
 //simple ping command to check if the bot is online.
 const strifecall = require("../modules/strifecall.js");
 
+exports.summary = `heal yourself`;
+exports.description = prefix=>`Can be used to heal if you are in a house.
+\`${prefix}heal\``;
 exports.run = (client, message, args) => {
 
   if(funcall.regTest(client, message, message.author) == false){

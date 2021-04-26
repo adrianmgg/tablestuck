@@ -1,3 +1,5 @@
+// TODO needs summary
+// TODO needs description
 exports.run = (client, message, args) => {
 
 let charid = message.guild.id.concat(message.author.id);

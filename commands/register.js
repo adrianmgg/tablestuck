@@ -5,6 +5,8 @@ const landcall = require("../modules/landcall.js");
 //This command creates a character sheet in the player database as well as a new land in the location database
 const strifecall = require("../modules/strifecall.js");
 
+// TODO needs summary
+// TODO needs description
 exports.run = async function(client, message, args){
 
 const tourneyList = client.auth.list;

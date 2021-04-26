@@ -1,3 +1,6 @@
+exports.summary = `fall asleep (or wake up?)`;
+exports.description = prefix=>`Drift off to sleep, or wake up, depending on which body you currently occupy. Your alternate self will heal while you act as yourself (dream heals while waking and vice versa). Will eventually be one of two ways to heal, the other being CONSUMING food.
+\`${prefix}sleep\``; // FIXME pretty sure this one might need to be updated? idk
 exports.run = function(client, message, args) {
 
   if(client.strifecall.strifeTest(client, message, message.author) == true){

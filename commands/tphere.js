@@ -1,3 +1,5 @@
+// TODO needs summary
+// TODO needs description
 exports.run = (client, message, args) => {
 
   if(client.strifecall.strifeTest(client, message, message.author) == true){
