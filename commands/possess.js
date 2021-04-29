@@ -1,3 +1,4 @@
+exports.helpCategories = ['dm'];
 // TODO needs summary
 // TODO needs description
 exports.run = (client, message, args) => {

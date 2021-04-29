@@ -1,4 +1,5 @@
 
+exports.helpCategories = ['movement', 'dm'];
 exports.summary = `fly to a desired coordinate in the section you're in`;
 exports.description = prefix=>`Used to fly to a desired coordinate in the section you're in. Can always be used on the dream moons, but you must have the ability to fly through the SPACE trait bonus or the ROCKET set bonus.
 \`${prefix}fly [x coordinate] [y coordinate]\``;

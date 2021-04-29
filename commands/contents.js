@@ -1,3 +1,4 @@
+exports.helpCategories = ['inventory'];
 exports.summary = `display the contents of an item in the room`;
 exports.description = prefix=>`Can be used to display the contents of an item with the STORAGE trait.
 \`${prefix}contents [index of item in room]\`

@@ -1,5 +1,6 @@
 const phernalia = ["cruxtruder","totem lathe","alchemiter","pre-punched card","punch designix","instant alchemiter"]
 
+exports.helpCategories = ['server'];
 exports.summary = `displays the paraphernalia registry of your client`;
 exports.description = prefix=>`Requires a computer. Displays the PARAPHERNALIA REGISTRY of your CLIENT. This include machines that can be DEPLOYED and items the client has alchemized, and show up in their ATHENAEUM.
 

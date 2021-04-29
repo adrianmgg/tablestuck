@@ -2,6 +2,7 @@ const funcall = require("../modules/funcall.js");
 const landcall = require("../modules/landcall.js");
 const strifecall = require("../modules/strifecall.js");
 
+exports.helpCategories = ['inventory'];
 exports.summary = `captchalogue an item from the room you are in and put it in your sylladex`;
 exports.description = prefix=>`Used to CAPTCHALOGUE an item from the room you are in and put it in your SYLLADEX. If your SYLLADEX is full, this will eject an item to make room.
 

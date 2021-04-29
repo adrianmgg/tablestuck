@@ -4,6 +4,7 @@ const strifecall = require("../modules/strifecall.js");
 
 //command to alchemize an item from a totem in the alchemiter
 
+exports.helpCategories = ['alchemy'];
 exports.summary = `alchemize objects chosen from your alchemy athenaeum`;
 exports.description = prefix=>`The ALCHEMIZE command can be used to alchemize objects chosen from your ALCHEMY ATHENAEUM.
 

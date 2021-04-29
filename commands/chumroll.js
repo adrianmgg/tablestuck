@@ -2,6 +2,7 @@ const funcall = require("../modules/funcall.js");
 
 
 
+exports.helpCategories = ['pester'];
 exports.summary = `view and add players to your chumroll`;
 exports.description = prefix=>`Used to view and add players to your CHUMROLL.
 

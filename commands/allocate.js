@@ -3,6 +3,7 @@ const strifecall = require("../modules/strifecall.js");
 
 //used to allocate a weaponkind to the strife specibus
 
+exports.helpCategories = ['gear'];
 exports.summary = `allocate an unallocated strife specibus`;
 exports.description = prefix=>`The allocate command is used to allocate an unallocated STRIFE SPECIBUS to the weaponkind of the selected item. This must be used before equipping items to the specibus.
 \`${prefix}allocate [item position in sylladex]\``;

@@ -3,6 +3,7 @@ const landcall = require(`../modules/landcall.js`);
 const funcall = require(`../modules/funcall.js`);
 const strifecall = require(`../modules/strifecall.js`);
 
+exports.helpCategories = ['movement'];
 exports.summary = `display a map showing the entire section you are in`;
 exports.description = prefix=>`Will display a detailed map showing the entire section you are in. Areas you haven't visited will be hidden. This cannot be done in a house.
 \`${prefix}map\``;

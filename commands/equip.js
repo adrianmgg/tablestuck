@@ -2,6 +2,7 @@ const funcall = require("../modules/funcall.js");
 //simple ping command to check if the bot is online.
 const strifecall = require("../modules/strifecall.js");
 
+exports.helpCategories = ['gear'];
 exports.summary = `equip an item from your sylladex to your strife specibus`;
 exports.description = prefix=>`Used to Equip an item from your SYLLADEX to your STRIFE SPECIBUS. You need to ${prefix}ALLOCATE the weaponkind first, and you can only equip weapons of a weaponkind you have allocated.
 \`${prefix}equip [item index in sylladex]\``;

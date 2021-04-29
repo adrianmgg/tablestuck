@@ -3,6 +3,7 @@ const funcall = require("../modules/funcall.js");
 const strifecall = require("../modules/strifecall.js");
 
 
+exports.helpCategories = ['inventory']; // it kinda is i guess? idk
 exports.summary = `view your total number of grist`;
 exports.description = prefix=>`Used to view your total number of GRIST.
 \`${prefix}grist\``;

@@ -2,6 +2,7 @@ const funcall = require("../modules/funcall.js");
 //simple ping command to check if the bot is online.
 const strifecall = require("../modules/strifecall.js");
 
+exports.helpCategories = ['strife', 'dm'];
 exports.summary = `engage in strife`;
 exports.description = prefix=>`Allows you to engage in strife. If there are underlings in the room, you will roll initative to see who goes first, and can begin to ACT. If there is no one there, you can wait until others show up, or abscond.
 \`${prefix}strife\`

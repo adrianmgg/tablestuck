@@ -2,6 +2,7 @@ const funcall = require("../modules/funcall.js");
 //simple ping command to check if the bot is online.
 const strifecall = require("../modules/strifecall.js");
 
+exports.helpCategories = ['dm'];
 // TODO needs summary
 // TODO needs description
 exports.run = (client, message, args) => {

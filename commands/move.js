@@ -1,4 +1,5 @@
 
+exports.helpCategories = ['movement'];
 exports.summary = `move between areas`;
 exports.description = prefix=>`Move between areas either in a house or on a land.
 

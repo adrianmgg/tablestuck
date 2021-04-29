@@ -1,3 +1,4 @@
+exports.helpCategories = [];
 exports.summary = `send messages to your chums`;
 exports.description = prefix=>`Requires a computer. Allows you to send messages to your chums! Find out your chum's pestertags in your CHUMROLL.
 \`${prefix}pester [chumtag] [message]\``;

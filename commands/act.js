@@ -4,6 +4,7 @@ const tierDmg = [1,5,7,10,14,19,25,32,40,49,59,70,82,95,109,124,140];
 const log =true;
 //Used to take actions during STRIFE
 
+exports.helpCategories = ['strife'];
 exports.summary = `select an action to take during strife`;
 exports.description = prefix=>`During strife, this command is used to select an action to take and the target of said action. 
 \`${prefix}act [action] [target]\`

@@ -2,6 +2,7 @@ const funcall = require("../modules/funcall.js");
 const strifecall = require("../modules/strifecall.js");
 //simple ping command to check if the bot is online.
 
+exports.helpCategories = ['inventory'];
 exports.summary = `use items`;
 exports.description = prefix=>`Lets you interact with a variety of items throughout the game, such as game disks, cruxite dowels, entry artifacts, captcha cards, and boondollars you find on your land.
 \`${prefix}use [item from sylladex] [target item to use on, if applicable]\``;

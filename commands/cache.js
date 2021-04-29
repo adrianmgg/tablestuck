@@ -2,6 +2,7 @@ const funcall = require("../modules/funcall.js");
 //displays player's grist total
 const strifecall = require("../modules/strifecall.js");
 
+exports.helpCategories = ['server'];
 exports.summary = `view your client player's grist`;
 exports.description = prefix=>`The CACHE command can be used to view your CLIENT PLAYER'S grist.
 \`${prefix}cache\``;

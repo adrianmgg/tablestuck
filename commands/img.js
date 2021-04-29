@@ -1,4 +1,4 @@
-
+exports.helpCategories = ['dev'];
  exports.run = async function(client, message, args){
 
 if(!client.funcall.dmcheck(client,message)){

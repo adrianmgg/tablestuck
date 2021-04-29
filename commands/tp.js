@@ -1,3 +1,4 @@
+exports.helpCategories = ['movement', 'dm'];
 exports.summary = `teleport to other players`;
 exports.description = prefix=>`Lets you teleport to other players, if you get the full Space set.
 \`${prefix}tp [ping of target player]\``;

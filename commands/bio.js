@@ -1,3 +1,4 @@
+exports.helpCategories = [];
 exports.summary = `set the bio that will be displayed when someone checks your character`;
 exports.description = prefix=>`The BIO command is used to set the bio that will be displayed when someone uses the ${prefix}check command on your character.
 \`${prefix}bio [character description / backstory / whatever you want]\``;

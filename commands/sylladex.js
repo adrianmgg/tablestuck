@@ -2,6 +2,7 @@ const funcall = require("../modules/funcall.js");
 const strifecall = require("../modules/strifecall.js");
 //simple ping command to check if the bot is online.
 
+exports.helpCategories = ['inventory'];
 exports.summary = `view and manage your sylladex`;
 exports.description = prefix=>`Allows for the viewing and management of your sylladex.
 

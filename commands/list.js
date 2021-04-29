@@ -1,6 +1,7 @@
 
 const typeList = ["EMPTY","DUNGEON","CONSTRUCT","RETURN NODE","VILLAGE","HOUSE","GATE"];
 
+exports.helpCategories = ['strife'];
 exports.summary = `view a list of characters in the room with you`;
 exports.description = prefix=>`View a list of all characters in the room with you. 
 \`${prefix}list\`

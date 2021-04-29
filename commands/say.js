@@ -1,3 +1,4 @@
+exports.helpCategories = ['communication'];
 exports.summary = `say something to everyone in the same room as you`;
 exports.description = prefix=>`Sends a message to everyone else in the same room as you.
 \`${prefix}say [message]\``;

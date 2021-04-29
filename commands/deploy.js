@@ -4,6 +4,7 @@ const strifecall = require("../modules/strifecall.js");
 
 const tierCost = [0,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768,65536,131072]
 
+exports.helpCategories = ['server'];
 exports.summary = `deploy an item into your client player's house`;
 exports.description = prefix=>`Used to deploy an item into your CLIENT PLAYER'S house.
 

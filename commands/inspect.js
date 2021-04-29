@@ -5,6 +5,7 @@ const strifecall = require("../modules/strifecall.js");
 
 const typeList = ["EMPTY","DUNGEON","CONSTRUCT","RETURN NODE","VILLAGE","HOUSE","GATE"];
 
+exports.helpCategories = ['inventory'];
 exports.summary = `inspect items in the current room`;
 exports.description = prefix=>`Without an argument, this will list items in the room with you. 
 \`${prefix}inspect\`

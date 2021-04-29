@@ -4,6 +4,7 @@ const strifecall = require("../modules/strifecall.js");
 
 //command to alchemize an item from a totem in the alchemiter
 
+exports.helpCategories = ['alchemy'];
 exports.summary = `use the instant alchemiter`;
 exports.description = prefix=>`Once your server has deployed your INSTANT ALCHEMITER, you gain access to quick alchemy! All the fun of alchemy without all the running around, carving dowels and punching cards.
 

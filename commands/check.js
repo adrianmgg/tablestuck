@@ -1,3 +1,4 @@
+exports.helpCategories = []; // TODO needs help categories
 exports.summary = `inspect an npc or player in the room with you`;
 exports.description = prefix=>`Used to INSPECT the information of an NPC or PLAYER in the room with you.
 

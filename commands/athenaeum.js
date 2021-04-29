@@ -1,3 +1,4 @@
+exports.helpCategories = ['alchemy'];
 exports.summary = `view and manage the alchemy athenaeum`;
 exports.description = prefix=>`The Athenaeum command (or ${prefix}ath for convenience) is used to view and manage the ALCHEMY ATHENAEUM, a list of all items that are available to alchemize. 
 

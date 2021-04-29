@@ -1,3 +1,4 @@
+exports.helpCategories = ['customization', 'pester'];
 exports.summary = `change the profile picture that is displayed when pestering chums`;
 exports.description = prefix=>`Used to change the PROFILE PICTURE that is displayed when PESTERING chums.
 \`${prefix}chumpic [Image URL]\``;

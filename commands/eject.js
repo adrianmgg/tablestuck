@@ -2,6 +2,7 @@ const funcall = require("../modules/funcall.js");
 //simple ping command to check if the bot is online.
 const strifecall = require("../modules/strifecall.js");
 
+exports.helpCategories = ['inventory'];
 exports.summary = `eject an item from your sylladex`;
 exports.description = prefix=>`Used to EJECT an item from your SYLLADEX into the room you are in. If a position in the sylladex that does not have an object in it but DOES have a captcha card is selected, you will eject that captcha card from your sylladex.
 \`${prefix}eject [index in sylladex]\``;

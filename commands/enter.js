@@ -6,6 +6,7 @@
 const gateReq = [0,100,200,400,800,1600,3200,6400];
 const gateName = ["FIRST","SECOND","THIRD","FOURTH","FIFTH","SIXTH","SEVENTH"];
 
+exports.helpCategories = ['movement'];
 exports.summary = `enter gates, return nodes, dungeons, etc.`;
 exports.description = prefix=>`Used to enter gates above a player's house, enter return nodes, enter dungeon entrances, enter gates on land, and use the chain on the dream moons.
 

@@ -2,6 +2,7 @@ const funcall = require("../modules/funcall.js");
 //simple ping command to check if the bot is online.
 const strifecall = require("../modules/strifecall.js");
 
+exports.helpCategories = ['strife', 'gear'];
 exports.summary = `change which weapon in your specibus you currently have equipped`;
 exports.description = prefix=>`Allows you to change which weapon in your SPECIBUS you currently have equipped, for combat and trait bonuses. Can be done in combat at the cost of 1 stamina, or out of combat for free.
 \`${prefix}switch [number of item in SPECIBUS]\``;

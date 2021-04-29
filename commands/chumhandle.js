@@ -1,3 +1,4 @@
+exports.helpCategories = ['customization', 'pester'];
 exports.summary = `change your chumhandle and chumtag`;
 exports.description = prefix=>`Used to change your CHUMHANDLE and CHUMTAG, which are used by your chums to ${prefix}PESTER you and add you to their ${prefix}CHUMROLL. 
 \`${prefix}chumhandle [desired chumhandle] [desired 2 digit chumtag]\``;

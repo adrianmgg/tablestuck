@@ -2,6 +2,7 @@ const funcall = require("../modules/funcall.js");
 const strifecall = require("../modules/strifecall.js");
 //simple ping command to check if the bot is online.
 
+exports.helpCategories = ['gear'];
 exports.summary = `inspect/manage your strife specibus`;
 exports.description = prefix=>`Lets you see your strife specibus. after ALLOCATING a weaponkind, items you EQUIP will show up here.
 

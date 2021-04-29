@@ -1,3 +1,4 @@
+exports.helpCategories = ['movement'];
 exports.summary = `use a transportalizer`;
 exports.description = prefix=>`Lets you use a transportalizer when you find yourself in the same room as one.
 

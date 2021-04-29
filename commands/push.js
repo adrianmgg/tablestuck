@@ -1,3 +1,4 @@
+exports.helpCategories = ['strife'];
 // TODO needs summary
 exports.description = prefix=>`For removing AFK players from a strife. If the player who's turn it is has been inactive for more than 30 seconds, you can PUSH them out of strife. No more getting stuck in strifes for trying to help out your sleeping friend! You can also use this if Underlings get glitched out and stop taking their turns.
 \`${prefix}push\``;
