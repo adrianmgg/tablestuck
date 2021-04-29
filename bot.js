@@ -141,6 +141,8 @@ fs.readdir("./events/", (err, files) => {
 });
 
 client.commands = new Enmap();
+// a few categories are handled specially so make sure those are there
+client.helpCategories = {all: new Set(), uncategorized: new Set(), dm: new Set(), dev: new Set()};
 
 fs.readdir("./commands/", (err, files) => {
   if (err) return console.error(err);
@@ -153,6 +155,22 @@ fs.readdir("./commands/", (err, files) => {
     console.log(`Attempting to load command ${commandName}`);
     // Here we simply store the whole thing in the command Enmap. We're not running it right now.
     client.commands.set(commandName, props);
+    // set up help categories stuff
+    if(!('helpCategories' in props) || props.helpCategories.length === 0) {
+      client.helpCategories.uncategorized.add(commandName);
+      client.helpCategories.all.add(commandName);
+    }
+    else {
+      if(!props.helpCategories.includes('dev')) {
+        client.helpCategories.all.add(commandName);
+      }
+      for(let category of props.helpCategories) {
+        if(!(category in client.helpCategories)) {
+          client.helpCategories[category] = new Set();
+        }
+        client.helpCategories[category].add(commandName);
+      }
+    }
   });
 });
 
