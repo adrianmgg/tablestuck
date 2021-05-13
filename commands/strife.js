@@ -10,10 +10,29 @@ exports.description = prefix=>`Allows you to engage in strife. If there are unde
 (Can also be used to leave strife, but this is purely a debug function, try not to do this unless you need to, and if you need to, tell us!)`;
 exports.run = (client, message, args) => {
 
-    var charid = client.playerMap.get(message.guild.id.concat(message.author.id),"control");
+    let target = message.author;
+
+    //uncomment this code for the tournament
+/*
+    if(!client.funcall.dmcheck(client,message)){
+      message.channel.send("You must wait for the referee to add you to the Strife!");
+      return;
+    }
+
+    if(!message.mentions.members.first()){
+      message.channel.send("You must @ a player to add them to strife!");
+      return;
+    }
+
+    target = message.mentions.members.first();
+*/
+
+
+    var charid = client.playerMap.get(message.guild.id.concat(target.id),"control");
     let local = client.playerMap.get(charid,"local");
 // if player is in strife, leave strife
-    if(strifecall.strifeTest(client, message, message.author) == true){
+
+    if(strifecall.strifeTest(client, message, target) == true){
 
       client.strifecall.leaveStrife(client,message,local,client.playerMap.get(charid,"pos"));
       return;

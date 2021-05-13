@@ -1,4 +1,4 @@
-const tourney = false;
+const tourney = true;
 
 module.exports = (client, message) => {
   //ignore all bots
@@ -9,10 +9,10 @@ module.exports = (client, message) => {
   //Ignore all messages not starting with the prefix
   if(message.content.indexOf(client.auth.prefix) !== 0) return;
 
-  var freeAct = ["register","leaderboard","stats","scratch","help","initialize","trait"];
+  var freeAct = ["register","leaderboard","stats","scratch","help","initialize","trait","act"];
 
   if(tourney){
-    freeAct = ["register","leaderboard","stats","scratch","help","initialize","trait","heal","consume","act","strife","switch","specibus","sylladex","captcha","eject","alchemize","armor","trinket","equip","list","inspect"];
+    freeAct = ["register","leaderboard","stats","scratch","help","initialize","trait","heal","consume","act","strife","switch","specibus","sylladex","captcha","eject","alchemize","armor","trinket","equip","list","inspect","pass","quickalch","grist","ath","say","rename","use","allocate","push"];
   }
 
   //standard argument/command name definition
@@ -35,17 +35,17 @@ module.exports = (client, message) => {
       }
     }
 
-    if(!reg&&command!="register"&&command!="help"&&command!="initialize"&&command!="scratch"&&command!="leaderboard"){
+    if(!reg&&command!="register"&&command!="help"&&command!="initialize"&&command!="scratch"&&command!="leaderboard"&&command!="config"){
       message.channel.send("You are not registered! Register using the >register command!");
       return;
     }
 
-    if(client.playerMap.get(charid,"act")>=client.limit&&client.limit!=0&&!freeAct.includes(command)){
+    if(client.playerMap.get(charid,"act")>=client.limit&&client.limit!=0&&!freeAct.includes(command)&&!client.funcall.dmcheck(client,message)){
       message.channel.send("You have reached your maximum number of actions for this tournament!");
       return;
     }
   } catch(err){
- console.log("failed when checking to see if someone is registered, or if they're over the tournament action limit.");
+ console.log("A player took an action when not reigistered, probably the DM. Mostly good to ignore.");
   }
   if (client.limit != 0) {
 	 client.user.setActivity("PESTERCORD TOURNAMENT");

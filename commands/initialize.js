@@ -3,12 +3,18 @@
 // TODO needs description
 exports.run = (client, message, args) => {
 
-
+  if(!client.funcall.dmcheck(client,message)){
+    message.channel.send("Only a DM can use this command! Make sure to give yourself a role named \"DM\" if you're in charge!");
+    return;
+  }
 if(client.landMap.has(message.guild.id+"medium")){
   message.channel.send("Session already exists!");
   return;
 }
-
+if(!args[0]||args[0].toLowerCase()!="confirm"){
+  message.channel.send(`make sure you've set up the ${client.auth.prefix}config command, some of the settings have no effect if changed after initialization! do "${client.auth.prefix}initialize confirm" when you're ready!`);
+  return;
+}
 let castlegen = [[0,0],[0,0]];
 
 for(i=0;i<2;i++){
@@ -16,7 +22,6 @@ for(i=0;i<2;i++){
   castlegen[i][j]=Math.floor(Math.random()*2)+(Math.floor(Math.random()*4)*3);
 }
 }
-console.log(castlegen);
   let dreamMoon = client.landcall.moonGen(client,castlegen[0],castlegen[1]);
 
 //chumhandle [charid,chumhandle]
