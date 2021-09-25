@@ -43,7 +43,7 @@ exports.run = (client, message, args) => {
       return;
     }
     
-    if(subValue >= dex.length || subValue < 0) {
+    if(subValue >= dex[value][4].length || subValue < 0) {
       message.channel.send("That is not a valid argument!")
       return;
     }
